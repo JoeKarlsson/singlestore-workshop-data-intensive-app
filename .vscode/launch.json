@@ -1,27 +1,21 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Run simulator",
-            "type": "go",
-            "request": "launch",
-            "mode": "auto",
-            "program": "${workspaceFolder}/src/bin/simulator",
-            "args": [
-                "--config",
-                "${workspaceFolder}/src/config-sim.toml",
-            ]
-        },
-        {
-            "name": "Run api",
-            "type": "go",
-            "request": "launch",
-            "mode": "auto",
-            "program": "${workspaceFolder}/src/bin/api",
-            "args": [
-                "--config",
-                "${workspaceFolder}/src/config-api.toml",
-            ]
-        },
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run simulator",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}/src/bin/simulator",
+      "args": ["--config", "${workspaceFolder}/src/config-sim.toml"]
+    },
+    {
+      "name": "Run api",
+      "type": "go",
+      "request": "launch",
+      "mode": "auto",
+      "program": "${workspaceFolder}/src/bin/api",
+      "args": ["--config", "${workspaceFolder}/src/config-api.toml"]
+    }
+  ]
 }
