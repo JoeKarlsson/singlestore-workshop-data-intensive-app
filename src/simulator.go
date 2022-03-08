@@ -5,7 +5,6 @@ package src
 
 import (
 	"container/list"
-	"log"
 	"math"
 	"math/rand"
 	"time"
@@ -102,14 +101,11 @@ func (s *Simulator) Run() error {
 				}
 			}
 
-			log.Printf(user.CurrentPage.Path)
-
 			err := events.Encode(Event{
 				Timestamp: unixNow,
-				PageTime:  pageTime.Seconds(),
-				Referrer:  "",
 				UserID:    user.UserID,
 				Path:      user.CurrentPage.Path,
+				PageTime:  pageTime.Seconds(),
 			})
 			if err != nil {
 				return err

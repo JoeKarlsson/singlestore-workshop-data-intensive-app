@@ -2,7 +2,7 @@ numWorkers = 2
 maxUsersPerTick = 1000
 maxUsersPerThread = 10000
 
-sitemapURL = "https://www.singlestore.com/sitemap.xml"
+sitemapURL = "https://www.apple.com/sitemap.xml"
 
 [producer]
 brokers = [ "redpanda:9092", "localhost:9093" ]
